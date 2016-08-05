@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app='myapp' ng-init='liuser=true'>
+<body ng-controller='controlador'>
+     
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Books API </title>    
+<link rel="stylesheet" href="css/styles.css" rel="stylesheet" type="text/css">
+
+<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-modal-service/dst/angular-modal-service.min.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/socket.io/socket.io.js"></script>
+
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+</head>
+
+<header>
+  <!--NAV-->  
+ <ul class="nav nav-tabs">
+  <li><a ng-click='login()' ng-hide='userli' href="/#/">Login</a></li>
+  <li><a ng-click='singup()' ng-hide='userli' href="/#/">SingUp</a></li>
+  
+  <li ng-show='userli' role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="/#/" role="button" aria-haspopup="true" aria-expanded="false">
+     Welcome!  {{username}} <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href='/logout'>Logout</a></li>
+       <li><a href='/#/' ng-click='update()'>Edit Count</a></li>
+    </ul>
+  </li>
+</ul>
+</header>
+
+<!--MAIN CONTAINER-->
+
+<div id='maincontainer'>
+  
+  <!--container for the input box-->
+ <div id='containerInput'>  
+     <a href='/#/'><img src='images/logo.png'/></a>
+     
+     <input type=text ng-model='book' placeholder='find your book'>
+     <a href='/#/' ng-click='fnsearch()' class='waves-effect waves-light btn' >Search</a>
+     
+ </div>
+
+
+ <!--CONTAINER FOR THE OPTIONS MY BOOK AND ALL BOOKS-->
+ <div id='containermybook'>
+     <div id='containermy' ng-show="showmylink"><a ng-click='fnAllMy("my")' href='#mybooks'><img src='/images/my.png'/></a></div>
+     <div id='containerall'><a ng-click='fnAllMy("all")' href='#allbooks'><img src='/images/logoallbooks.png'/></a></div>
+ </div>
+ 
+ 
+ <div ng-view></div>
+
+  
+</div>
+
+
+
+
+
+<script src='js/do.js'></script>
+
+
+</body>
+
+</html>

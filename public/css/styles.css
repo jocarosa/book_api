@@ -1,0 +1,228 @@
+body{
+   background-color:#D1D5D8;
+    
+}
+button{
+   
+}
+img{
+    /*margin:25px 0px 10px 25px;*/
+    width:50%;
+    height:80%;
+    float:left;
+    margin:8px 7px 0px 0px;
+}
+#containernav{
+    margin:10px 0px 0px 0px;
+    padding:10px;
+}
+#containerInput{
+   margin-top:10px;
+    width:100%;
+    padding:10px;
+    background-color: #1565C0;
+}
+#containermybook{
+   
+    float:left;
+    width:100%;
+    height:150px;
+   
+    
+}
+
+
+#containermy{
+    border-radius: 50px;
+     width:100px;
+    height:100px;
+    margin:10px 0px 0px 50%;
+    background-color:#558B2F;
+   float:left;
+}
+#containermy:hover{
+    background-color:#33691E;
+}
+
+#containerall{
+    border-radius: 50px;
+     width:100px;
+    height:100px;
+    float:left;
+    margin:10px 0px 0px 30px;
+    background-color:#1A237E;
+}
+#containerall:hover{
+   background-color:#303F9F; 
+}
+#containerall img{
+    width:100px;
+    height:100px;
+}
+#containermy img{
+  width:100px;
+   height:100px;  
+}
+#containerSearchBook{
+    border-radius: 130px;
+    float:left;
+    width:250px;
+    height:290px;
+    font-size:12px;
+    padding:10px;
+    margin:10px 0px 10px 10px;
+     background-color:#1565C0;
+     color:white;
+}
+
+
+#containerInput input{
+  
+    margin:0px 5px 5px 40%;
+    width:400px;
+    height:30px;
+    color:white;
+}
+#containerInput img{
+    width:150px;
+    height:150px;
+    margin-left: 50%;
+}
+#containertitle{
+     
+     text-align: center;
+     padding:4px;
+     background-color:white;
+     color:black;
+     font-weight: bold;
+     
+}
+#containerimg{
+    height:190px;
+/* border:1px solid black;*/
+    padding:5px;
+}
+
+#containerdescription{
+     
+     background-color:gray;
+     margin-left:50%;
+     height:100px;
+    width:200px;
+}
+#containerbuttons {
+  
+   height:20px;
+   margin-left: 65px;
+   padding:5px;
+}
+
+#imglogo{
+   
+    width:150px;
+    height:150px;
+   margin-left:50%;
+}
+#containerallbooks li{
+    width:15%;
+    height:50px;
+    color:white;
+    padding:5px;
+    float:left;
+    margin:0px 0px 0px 5px;
+   
+    
+}
+.styleimgtrade{
+    width:25px;
+    height:25px;
+    
+}
+.stylelinktrade{
+  margin-bottom:5px;
+  color:green;
+  
+}
+.stylelinktradeactive{
+    color:red;
+}
+
+
+#containerallbooks{
+    
+    
+    width:800px;
+    margin:100px 0px 0px 20%;
+    height:400px;
+    
+}
+#containerallbooks submit{
+    
+    padding:5px;
+    background-color: #1A237E;
+    margin:0px 0px 0px 20px;
+}
+.styleimgbook{
+    margin-top: 5px;
+    width:100px;
+    height:135px;
+}
+.styleLi{
+   
+    width:110px;
+    float:left;
+    margin:5px 0px 0px 5px;
+    padding:5px;
+}
+#containerbuttonsrequest{
+    
+    width:100%;
+}
+#containerbuttonsrequest button{
+    width:396px;
+}
+#containersingup{
+   
+    width:100%;
+    height:100%;
+    margin:auto;
+    padding:30px;
+}
+#containersingup img{
+    width:30px;
+    height:30px;
+    
+    
+}
+#containersingup input{
+    width:130px;
+    height:30px;
+   
+    
+    
+}
+#containerUpdateInformation{
+    
+    padding:15px;
+    margin:6px;
+    height:515px;
+}
+#containerMyBooks{
+    
+    margin:125px 0px 0px 20%;
+    width:70%;
+    
+    
+}
+#containerLogin{
+   
+   padding:30px;
+   height:80%;
+   margin:10px;
+}
+.email.ng-dirty.ng-invalid-email {
+          background-color: #EF9A9A;
+      }
+.email.ng-valid {
+          background-color: #80CBC4;
+      }      

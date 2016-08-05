@@ -1,0 +1,28 @@
+<div id='divmodal' class="modal fade" >
+    
+    <div id='containerUpdateInformation'>
+        
+        <button type="button" class="close" ng-click="close(true)" data-dismiss="modal" aria-hidden="true">x</button>
+        <form>
+        <table>
+        <tr>
+            <td><h4> Name</h4></td>
+            <td><input type='text' ng-model='nameUpdate' required></td>
+        </tr>
+        <tr>
+            <td><h4> City</h4></td>
+            <td><input type='text' ng-model='cityUpdate' required></td>
+        </tr>
+        <tr>
+            <td><h4> State</h4></td>
+            <td><input type='text' ng-model='stateUpdate' required></td>
+        </tr>
+        <tr>
+            <td><button ng-click='updating(nameUpdate,cityUpdate,stateUpdate)' class='waves-effect waves-light btn'>Update</button><td>
+        </tr>
+        </table>
+        </form>
+        
+    </div>
+
+</div>

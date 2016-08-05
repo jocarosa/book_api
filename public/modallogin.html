@@ -1,0 +1,35 @@
+ <div id='divmodal' class="modal fade" >
+   
+    <button type="button" class="close" ng-click="close(true)" data-dismiss="modal" aria-hidden="true">x</button>
+ 
+    <div id='containerLogin'>
+         
+           <h3>Please login here</h3>
+        
+            User
+            <input type='text' ng-model='txtuser'>
+            Password
+            <input type='password' ng-model='txtpassword'>
+            <a href='/#/'  ng-click=validate(txtuser,txtpassword)    class='waves-effect waves-light btn'  >Login</a>
+            {{errmessage}}
+    
+            </br>
+            </br>
+            <table>
+               <tr>
+                 <td><h4>User 1 :</h4></td>
+                 <td>administrator@test.com</td>
+                 <td><h4>Password : </h4></td>
+                 <td>12</td>
+             </tr>
+               <tr>
+                 <td><h4>User 2 :</h4></td>
+                 <td>admin2@gmail.com</td>
+                 <td><h4>Password : </h4></td>
+                 <td>12</td>
+               </tr>
+            </table>
+    </div>
+ 
+ </div>
+

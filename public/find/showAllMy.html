@@ -1,0 +1,19 @@
+<div id='containerMyBooks' ng-init='varStyleTrade="stylelinktrade"'>
+  
+  <center><h3>{{titleMyAll}}</h3></center>
+  
+  <div id='containerbuttonsrequest'>
+      <button ng-show='btnRequest' class='waves-effect waves-light btn'>Your Trade Request {{MyRequests}}      </button>
+      <button ng-show='btnRequest' class='waves-effect waves-light btn'>Trade Request for you {{RequestsForMe}}</button>
+  </div>
+  
+  <ul ng-repeat='book in Books[0]' ng-init='linkState[$index]= (book | filterBooks: Books)'>
+     
+      <li class='styleLi'>
+          <a ng-class='varStyleTrade'  href='/#/{{titleMyAll}}' ng-click="trade($index,book.id,book.name,book.img)"><img class="styleimgtrade" src='../images/trade.png'> {{linkState[$index]}}</a>
+          
+          <img class='styleimgbook' src={{book.img}}>
+      </li>
+  </ul>
+
+</div>

@@ -1,0 +1,45 @@
+<div class="modal fade" >
+    
+    <div id='containersingup'>
+         <button type="button" class="close" ng-click="close(true)" data-dismiss="modal" aria-hidden="true">x</button>
+         <h3>Please enter all your information here</h3>
+         <form name="formRegister">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input ng-keyup="validName()"  type='text' ng-model='name' required></td>
+                    <td><spam ng-show='namevalid'><img src='images/valid.png'></spam></td>
+                </tr>
+                <tr>
+                    <td> Email </td>
+                    <td><input ng-blur='validateEmail(email,true)' class='email' name='email' type='email' ng-model='email'></td>
+                    <td><spam ng-show='valid'><img src='images/valid.png'></spam></td>
+                </tr>
+                <tr>
+                    <td>Repeat Email</td>
+                    <td><input type='email' ng-model='emailtwo' ng-blur='validateEmail(emailtwo,false)'></td>
+                    <td><spam ng-show='valid'><img src='images/valid.png'></spam></td>
+                </tr>            
+                <tr>
+                    <td>password</td><td><input type='password'ng-keyup='validatePass()' ng-model='password' required></td>
+                    <td><spam ng-show='validpass' ><img src='images/valid.png'></spam></td>
+                </tr>   
+                <tr>
+                    <td>Repeat password</td><td><input type='password'ng-keyup='validatePass()' ng-model='password2' required></td>
+                    <td><spam ng-show='validpass' ><img src='images/valid.png'></spam></td>
+                </tr>         
+                <tr>
+                    <td colspan=2><a href='/#/'  ng-click='register()' class='waves-effect waves-light btn'>Register</button></td>
+                </tr>
+                 
+                <tr>
+                    <td>
+                       <h4>{{msgRegister}}</h4>
+                    </td>   
+                </tr>
+            </table>            
+         </form>           
+    </div>
+
+ </div>
+

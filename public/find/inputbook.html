@@ -1,0 +1,14 @@
+<div id="containerSearchBook" ng-repeat='x in respuesta'>
+    <div id='containertitle'>{{x.title}}</div>
+        <div id='containerimg'>
+            <img src='{{x.img}}'>
+            {{x.description}}
+    
+         </div>
+     <!--description-->    
+    <div id='containerbuttons'>
+        <a ng-click='addBook(x.id,x.title,x.img)'  class='waves-effect waves-light btn'>+ Add Book</a>
+     
+    </div>
+     
+ </div>
