@@ -20,7 +20,7 @@ app.use(session({
   secret: 'ssshhhhh'
 }));
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect('mongodb://localhost/test');
 
 
 route(app,io); 
