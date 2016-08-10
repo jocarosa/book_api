@@ -9,7 +9,7 @@ var server        = http.createServer(app);
 var io            = require('socket.io').listen(server);
 
 
-require('dotenv').load();
+require('dotenv').config();
 
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(express.static('public'));
