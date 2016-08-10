@@ -9,7 +9,7 @@
     "async": "~0.2.8",
     "express": "^3.2.6",
     "socket.io": "~0.9.14",
-    "request":"2.74.0"},
+    "request":"^2.74.0"},
     "engines": {
     "node": "4.4.2",
     
