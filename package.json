@@ -10,10 +10,9 @@
     "express": "^3.2.6",
     "socket.io": "~0.9.14",
     "request":"^2.74.0"
-    
   },
     "engines": {
-    "node": "4.4.2",
+    "node": "4.4.2"
     
   }
 }
