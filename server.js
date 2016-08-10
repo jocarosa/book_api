@@ -20,7 +20,7 @@ app.use(session({
   secret: 'ssshhhhh'
 }));
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://jocarosa:jocarosa19@ds153835.mlab.com:53835/bdb');
 
 
 route(app,io); 
