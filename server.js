@@ -20,13 +20,10 @@ app.use(session({
   secret: 'ssshhhhh'
 }));
 
-mongoose.connect('mongodb://jocarosa:jocarosa19@ds153835.mlab.com:53835/bdb');
-
+mongoose.connect(process.env.MONGO_URI);
 
 route(app,io); 
 
-
-
 server.listen(process.env.PORT,function(){
   console.log('app listening  on port '+ process.env.PORT);
-} );
+});
