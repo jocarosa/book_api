@@ -11,7 +11,6 @@ var io            = require('socket.io').listen(server);
 
 require('dotenv').load();
 
-
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(express.static('public'));
 app.use(bodyparser.urlencoded({extended:false}));
@@ -22,8 +21,6 @@ app.use(session({
 }));
 
 mongoose.connect(process.env.MONGO_URI);
-
-
 
 
 route(app,io); 
