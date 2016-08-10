@@ -1,10 +1,10 @@
 {
-  "name": "chat-example",
-  "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "name": "book_api",
+  "version": "1.0.0",
+  "description": "you can register your books and see other books",
   "main": "server.js",
   "repository": "https://github.com/jocarosa/book_api",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "author": "jocarosa",
   "dependencies": {
     "async": "~0.2.8",
     "express": "^3.2.6",
